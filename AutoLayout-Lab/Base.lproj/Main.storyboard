@@ -102,13 +102,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SA8-1j-CmF">
-                                <rect key="frame" x="87" y="396" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SA8-1j-CmF">
+                                <rect key="frame" x="0.0" y="246" width="414" height="414"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SA8-1j-CmF" secondAttribute="height" multiplier="1:1" id="T8U-VS-1br"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5x-da-3eB">
+                                <rect key="frame" x="103.5" y="349.5" width="207" height="207"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="e5x-da-3eB" firstAttribute="width" secondItem="SA8-1j-CmF" secondAttribute="width" multiplier="0.5" id="3kR-lW-bLy"/>
+                            <constraint firstItem="SA8-1j-CmF" firstAttribute="centerY" secondItem="AUy-nX-ha6" secondAttribute="centerY" id="7C0-AI-rZ3"/>
+                            <constraint firstItem="SA8-1j-CmF" firstAttribute="trailing" secondItem="AUy-nX-ha6" secondAttribute="trailing" id="HI7-M0-mhq"/>
+                            <constraint firstItem="SA8-1j-CmF" firstAttribute="width" secondItem="hSK-oY-bAX" secondAttribute="width" id="TCQ-ei-p6A"/>
+                            <constraint firstItem="e5x-da-3eB" firstAttribute="centerX" secondItem="SA8-1j-CmF" secondAttribute="centerX" id="XNc-1X-lze"/>
+                            <constraint firstItem="e5x-da-3eB" firstAttribute="centerY" secondItem="SA8-1j-CmF" secondAttribute="centerY" id="qKe-LB-jHU"/>
+                            <constraint firstItem="e5x-da-3eB" firstAttribute="height" secondItem="SA8-1j-CmF" secondAttribute="height" multiplier="0.5" id="tvR-VM-2A2"/>
+                            <constraint firstItem="SA8-1j-CmF" firstAttribute="leading" secondItem="AUy-nX-ha6" secondAttribute="leading" id="yPU-2M-wP2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AUy-nX-ha6"/>
                     </view>
                 </viewController>
